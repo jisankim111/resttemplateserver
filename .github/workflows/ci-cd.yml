@@ -33,6 +33,7 @@ jobs:
 
       - name: Build with Maven
         run: ./mvnw.cmd clean package -DskipTests
+        shell: cmd
 
       - name: Generate image tag
         id: meta
